@@ -26,6 +26,7 @@ export default class OrderModel extends Model {
   @BelongsTo(() => CustomerModel)
   declare customer: CustomerModel;
 
+  
   @HasMany(() => OrderItemModel)
   declare items: OrderItemModel[];
 

@@ -29,7 +29,7 @@ export default class OrderItemModel extends Model {
   @ForeignKey(() => OrderModel)
   @Column({ allowNull: false })
   declare order_id: string;
-
+  
   @BelongsTo(() => OrderModel)
   declare order: OrderModel;
 
